@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4 Diseño</title>
+    <link href="./css/ayuda.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado de la web -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img class="logo-img" src="./images/icons/logo-1.png" alt="logo de TodoFP">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="enlace">Inicio</a></li>
+                    <li><a href="informacion.html" class="enlace">Información</a></li>
+                    <li><a href="cursos.html" class="enlace">Cursos</a></li>
+                    <li><a href="alumnos.html" class="alumnos-btn">Alumnos</a></li>
+                    <li><a href="#" class="ayuda"><img class="info-help" src="./images/icons/help-icon.png" alt="icono de ayuda"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="contenido-help">
+            <div class="contacto-section">
+                <h2 class="titulo-contacto">¿Necesitas ayuda?</h2>
+                <p class="description-section">Preguntas frecuentes sobre FP</p>
+                <ul>
+                    <li><a href="#">¿Quieres estudiar Formación Profesional?</a></li>
+                    <li><a href="#">¿Quieres convalidar un Módulo Profesional?</a></li>
+                    <li><a href="#">¿Quieres estudiar un Curso de Especialización?</a></li>
+                    <li><a href="#">¿Sabes si tu antiguo Título de FP es equivalente a uno actual?</a></li>
+                    <li><a href="#">¿Quieres estudiar FP a distancia?</a></li>
+                    <li><a href="#">¿Tienes experiencia profesional pero ningún certificado que lo acredite?</a></li>
+                    <li><a href="#">¿Sabes que estudiar Formación Profesional te asegura prácticas en empresa?</a></li>
+                </ul>
+                <img src="./images/photos/help-img.png" alt="">
+            </div>
+
+            <div class="contacto-form-container">
+                <form class="contacto-form">
+                    <h3 class="form-title">Contacto</h3>
+                    <label for="name">Nombre y apellidos</label>
+                    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required />
+
+                    <label for="profile">Perfil</label>
+                    <input type="text" id="profile" name="profile" placeholder="Indica tu perfil (ej. Estudiante, Profesor, Padre, ...)" required />
+
+                    <label for="message">Consulta</label>
+                    <textarea id="message" name="message" placeholder="Escribe tus dudas aquí..." required></textarea>
+
+                    <button type="submit" class="submit-btn">ENVIAR</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Copyright &copy; 2024 TodoFP. Todos los derechos reservados. Diseñado por <a href="www.educacion.gob.es">www.educacion.gob.es</a>.</p>
+    </footer>
+</body>
+</html>

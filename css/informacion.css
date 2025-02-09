@@ -1,0 +1,359 @@
+/* Configuración general */
+body {
+    font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+    width: 100%;
+}
+
+/* Estilos para el header */
+header {
+    width: 100%;
+    background-color: #003366;
+    padding: 0.7rem 0;
+    position: fixed;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+
+/* Logotipo de TodoFP */
+.logo img {
+    height: auto;
+    width: 30%;
+}
+
+/* Menu y enlaces*/
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li .activo {
+    color: #e6b800;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.menu li .enlace:hover,
+.menu li .activo:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+}
+
+/* Botón para alumnos */
+.alumnos-btn {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #f3a712;
+    color: #fff;
+    border-radius: 0.2em;
+    padding: 0.3em 0.7em;
+    transition: all 0.5s ease;
+}
+
+.alumnos-btn:hover {
+    background-color: #e6b800;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+/* Imagen de ayuda */
+.info-help {
+    height: auto;
+    width: 30%;
+    margin-right: 1em;
+}
+
+/* Contenido principal */
+.title {
+    padding: 6% 5%;
+    text-align: start;
+}
+
+.title h1 {
+    color: #003366;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title h3 {
+    color: #555;
+    font-family: 'Nunito', sans-serif;
+}
+
+.text-content {
+    text-align: justify;
+}
+
+/* Seccion de Que es FP y tipos de centro */
+.info-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20em;
+    padding: 0 5%;
+    margin-top: -5.5%;
+    margin-bottom: 5rem;
+}
+
+.first-section {
+    flex: 1;
+}
+
+.first-section h2, .first-section h4 {
+    color: #003366;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.first-section a {
+    color: #457eb6;
+}
+
+.link {
+    font-size: 1.1em;
+}
+
+.link:hover {
+    color: #f3a712;
+}
+
+.first-section p {
+    margin-bottom: 1rem;
+}
+
+.first-section img {
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Seccion de tipos de FP y seguir formandote */
+.other-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20em;
+    padding: 0 5%;
+    margin-top: -2%;
+    margin-bottom: 5rem;
+}
+
+.second-section {
+    flex: 1;
+}
+
+.second-section h2, .second-section h4 {
+    color: #003366;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.second-section ul {
+    padding-left: 1.5rem;
+}
+
+.second-section li {
+    margin-bottom: 0.8rem;
+}
+
+.second-section a {
+    color: #457eb6;
+}
+
+.second-section img {
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Apartdo de te interesa FP */
+.interes-fp {
+    text-align: start;
+    background-color: #F3A712;
+    padding: 3.5em 5em;
+}
+
+.interes-fp h3 {
+    color: #003366;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: -0.5em;
+}
+
+.interes-button {
+    text-decoration: none;
+    background-color: #003366;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    font-weight: bold;
+    border-radius: 0.3em;
+    transition: background-color 0.3s ease;
+}
+
+.interes-button:hover {
+    background-color: #457eb6;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f5dd85;
+}
+
+/* TABLETS */
+@media (max-width: 1400px) AND (min-width: 769px) {
+
+    /* Imagen de ayuda */
+    .info-help {
+        height: 30px;
+        width: auto;
+        margin-right: 1em;
+    }
+
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
+
+    .info-content, .other-content {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .first-section img, .second-section img {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .interes-fp {
+        padding: 2em 2em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+}
+
+/* MOVILES */
+@media (max-width: 768px) {
+
+    /* Estilos para el header */
+    header {
+        width: 100%;
+        background-color: #003366;
+        padding: 0.7rem 0;
+        position: fixed;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 4rem 1em;
+    }
+
+    /* Logotipo de TodoFP */
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    /* Menu y enlaces*/
+    .menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li a {
+        font-size: 1em;
+    }
+
+    /* Cambiar la imgen de ayuda */
+    .info-help {
+        display: none;
+        /* Oculta la imagen */
+    }
+
+    .menu li .ayuda::before {
+        content: "Ayuda";
+        font-size: 1em;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    /* Contenido principal */
+    .title {
+        padding: 16% 2%;
+    }
+
+    .title h1 {
+        font-size: 1.5rem;
+    }
+
+    .title h3 {
+        font-size: 1.1rem;
+    }
+
+    .info-content, .other-content {
+        flex-direction: column;
+        gap: 2.5em;
+        padding: 0 2%;
+    }
+
+    .first-section img, .second-section img {
+        width: 90%;
+    }
+
+    .interes-fp {
+        text-align: center;
+        padding: 2em 1em;
+    }
+
+    .interes-button {
+        display: inline-block;
+        padding: 0.5em 1em;
+        font-size: 1em;
+    }
+
+
+    footer p {
+        font-size: 0.7em;
+    }
+}
